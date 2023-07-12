@@ -1,0 +1,585 @@
+*{
+	font-family: arial , sans-serif ;
+	box-sizing: border-box;
+	transition-property: all;
+	transition-duration: 0.3s !important;
+}
+:root{
+	--primary-color: rgb(153, 138, 190);
+	--primary-sec-color: #34167D;
+	--secondary-color: #fff;
+	--bg-color: #000;
+}
+
+.container-xxl{
+	padding: 0px !important;
+} 
+
+
+
+
+
+
+
+
+/*ROW 1*/
+#row-1{
+	padding: 40px;
+}
+#row-1-col-1{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+}
+
+#logo{
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	cursor: pointer;
+	background-image: linear-gradient(to right , transparent, transparent , var(--primary-color));
+	transition-property: all;
+	transition-duration: 0.5s;
+}
+#logo>h1{
+	font-weight: 800;
+	letter-spacing: 2px;
+	color: var(--secondary-color);
+	position: relative;
+	z-index: 2;
+}
+
+
+#row-1-col-1>nav{
+
+}
+#row-1-col-1>nav>ul{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	gap: 0px 40px;
+}
+#row-1-col-1>nav>ul>li{
+	list-style: none;
+}
+#row-1-col-1>nav>ul>li>a{
+	text-decoration: none;
+	color: var(--secondary-color);
+	transition-property: all;
+	transition-duration: 0.3s;
+	padding: 10px;
+}
+#row-1-col-1>nav>ul>li>a:hover{
+	color: var(--primary-color);
+}
+
+
+
+/*nav 2*/
+#row-1-col-1>nav>button{
+	border: none;
+	background-color: transparent;
+	display: none ;
+	padding: 0px;
+}
+#row-1-col-1>nav>button>#bar-logo{
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	cursor: pointer;
+}
+#row-1-col-1>nav>button>#bar-logo>svg{
+	height: 30px;
+	width: 30px;
+	color: white;
+}
+#row-1-col-1>nav>button>ul>li{
+	list-style: none;
+	display: block;
+	position: relative;
+	z-index: 2;
+}
+#row-1-col-1>nav>button>ul>li>a{
+	padding: 10px 20px;
+	text-decoration: none;
+	color: var(--secondary-color);
+	display: block;
+	position: relative;
+	z-index: 2;
+}
+#row-1-col-1>nav>button>ul>li>a:hover{
+	color: var(--primary-sec-color);
+	background-color: var(--secondary-color);
+}
+
+
+
+
+
+@media screen and (max-width: 700px){
+/*One*/
+#row-1-col-1>nav>ul{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	gap: 0px 40px;
+	display: none;
+}
+/*Two*/
+#row-1-col-1>nav>button{
+	display: block;
+}
+#row-1-col-1>nav>button>ul{
+	position: fixed;
+	left: -100%;
+	top: 0px;
+	width: 50%;
+	height: 100vh;
+	display: grid;
+	align-items: flex-start;
+	align-content: flex-start;
+	grid-gap: 50px 0px;
+	margin: 0px;
+	padding: 0px;
+	z-index: 999;
+	background-color:var(--primary-color);
+	transition-property: all !important;
+	transition-duration: 1s !important;
+	box-shadow: 0px 0px 50px 10px black;
+	padding-top: 60px;
+	overflow-y: scroll;
+}
+#nav-2-opacity{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: var(--bg-color);
+	opacity: 0.4;
+}
+#row-1-col-1>nav>button:focus ul{
+	left: 0px;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+/*ROW 2*/
+#row-2{
+	padding: 60px 10px;
+}
+#row-2-col-1{
+}
+#row-2-col-1>h1{
+	color: white;
+	letter-spacing: 0px;
+	font-style: italic;
+	text-align: center;
+	letter-spacing: 1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*Row 3*/
+#row-3{
+}
+#row-3-col-1{
+	display: block;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	padding: 40px;
+}
+#row-3-col-1 img{
+	width: 250px;
+	border-radius: 20px;
+}
+.img-hover{
+	position: absolute;
+	width: 100%;
+	height: 20%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	top: 0px;
+	transition-property: all;
+	transition-duration: 1s;
+	color: transparent;
+	border-radius: 20px;
+	font-weight: bold;
+}
+/*One*/
+#img-1{
+	position: relative;
+	margin: 30px;
+}
+#img-1:hover .img-hover{
+	cursor: pointer;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	color: var(--secondary-color);
+	font-weight: bold;
+	align-content: center;
+	background-image: linear-gradient(to top , var(--primary-sec-color), transparent);
+}
+/*Two*/
+#img-2{
+	position: relative;
+	margin: 30px;
+}
+#img-2:hover .img-hover{
+	cursor: pointer;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	color: var(--secondary-color);
+	font-weight: bold;
+	align-content: center;
+	background-image: linear-gradient(to top , var(--primary-sec-color), transparent);
+}
+/*Three*/
+#img-3{
+	position: relative;
+	margin: 30px;
+}
+#img-3:hover .img-hover{
+	cursor: pointer;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	color: var(--secondary-color);
+	font-weight: bold;
+	align-content: center;
+	background-image: linear-gradient(to top , var(--primary-sec-color), transparent);
+}
+/*Four*/
+#img-4{
+	position: relative;
+	margin: 30px;
+}
+#img-4:hover .img-hover{
+	cursor: pointer;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	color: var(--secondary-color);
+	font-weight: bold;
+	align-content: center;
+	background-image: linear-gradient(to top , var(--primary-sec-color), transparent);
+}
+/*Five*/
+#img-5{
+	position: relative;
+	margin: 30px;
+}
+#img-5:hover .img-hover{
+	cursor: pointer;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	color: var(--secondary-color);
+	font-weight: bold;
+	align-content: center;
+	background-image: linear-gradient(to top , var(--primary-sec-color), transparent);
+}
+/*Six*/
+#img-6{
+	position: relative;
+	margin: 30px;
+}
+#img-6:hover .img-hover{
+	cursor: pointer;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	color: var(--secondary-color);
+	font-weight: bold;
+	align-content: center;
+	background-image: linear-gradient(to top , var(--primary-sec-color), transparent);
+}
+/*Seven*/
+#img-7{
+	position: relative;
+	margin: 30px;
+}
+#img-7:hover .img-hover{
+	cursor: pointer;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	color: var(--secondary-color);
+	font-weight: bold;
+	align-content: center;
+	background-image: linear-gradient(to top , var(--primary-sec-color), transparent);
+}
+/*eight*/
+#img-8{
+	position: relative;
+	margin: 30px;
+}
+#img-8:hover .img-hover{
+	cursor: pointer;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	color: var(--secondary-color);
+	font-weight: bold;
+	align-content: center;
+	background-image: linear-gradient(to top , var(--primary-sec-color), transparent);
+}
+/*nine*/
+#img-9{
+	position: relative;
+	margin: 30px;
+}
+#img-9:hover .img-hover{
+	cursor: pointer;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	color: var(--secondary-color);
+	font-weight: bold;
+	align-content: center;
+	background-image: linear-gradient(to top , var(--primary-sec-color), transparent);
+}
+/*ten*/
+#img-10{
+	position: relative;
+	margin: 30px;
+}
+#img-10:hover .img-hover{
+	cursor: pointer;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	color: var(--secondary-color);
+	font-weight: bold;
+	align-content: center;
+	background-image: linear-gradient(to top , var(--primary-sec-color), transparent);
+}
+/*eleven*/
+#img-11{
+	position: relative;
+	margin: 30px;
+}
+#img-11:hover .img-hover{
+	cursor: pointer;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	color: var(--secondary-color);
+	font-weight: bold;
+	align-content: center;
+	background-image: linear-gradient(to top , var(--primary-sec-color), transparent);
+}
+/*twelve*/
+#img-12{
+	position: relative;
+	margin: 30px;
+}
+#img-12:hover .img-hover{
+	cursor: pointer;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	color: var(--secondary-color);
+	font-weight: bold;
+	align-content: center;
+	background-image: linear-gradient(to top , var(--primary-sec-color), transparent);
+}
+
+
+
+
+
+
+
+/*One*/
+#img-box-1{
+	display: flex;
+	justify-content: space-around;
+	align-content: flex-start;
+	align-items: flex-start;
+	gap: 0px 20px;
+	flex-wrap: wrap;
+	margin-bottom: 50px;
+}
+
+/*two*/
+#img-box-2{
+	display: flex;
+	justify-content: space-around;
+	align-content: flex-start;
+	align-items: flex-start;
+	gap: 0px 20px;
+	flex-wrap: wrap;
+	margin-bottom: 50px;
+}
+
+/*Three*/
+#img-box-3{
+	display: flex;
+	justify-content: space-around;
+	align-content: flex-start;
+	align-items: flex-start;
+	gap: 0px 20px;
+	flex-wrap: wrap;
+	margin-bottom: 50px;
+}
+
+/*Four*/
+#img-box-4{
+	display: flex;
+	justify-content: space-around;
+	align-content: flex-start;
+	align-items: flex-start;
+	gap: 0px 20px;
+	flex-wrap: wrap;
+	margin-bottom: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#footer{
+	padding: 10px;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+
+#footer>h1{
+	text-align: center;
+}
+#footer>#Links{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	gap: 0px 10px;
+}
+#footer>#Links a{
+	color: var(--primary-color);
+	text-decoration: none;
+	text-align: center;
+	padding: 5px;
+}
+#footer>#Links a:hover{
+	color: var(--secondary-color);
+	text-decoration: none;
+}
